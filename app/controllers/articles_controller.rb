@@ -13,12 +13,12 @@ class ArticlesController < ApplicationController
     end
     def create
 
-        #    render plain: params[:article].inspect
-        @article = Article.new(article_params)
-        # instance variable that would be use in other places in our  blog application
-        # to access the parameters
-        @article.save
-        redirect_to @article
+            #    render plain: params[:article].inspect
+            @article = Article.new(article_params)
+            # instance variable that would be use in other places in our  blog application
+            # to access the parameters
+            @article.save
+            redirect_to @article
     end
 
     def edit
