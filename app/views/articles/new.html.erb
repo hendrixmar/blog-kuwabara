@@ -1,4 +1,9 @@
-<h1> Create a New Article! </h1>
+<div class="row">
+    <div class="col"> </div>
+<div class="col-md-10">
+
+
+<h1> Publica un nuevo articulo </h1>
 <%= form_for :article, url: articles_path do |f| %>
 <p>
     <%= f.label :title %> <br>
@@ -14,5 +19,10 @@
 
 <% end %>
 <p>
-<%= link_to 'Cancelar', articles_path %> |
-<%= link_to 'Principal', welcome_index_path %> </p>
+ <%= link_to 'Regresar', articles_path, class:'btn btn-md btn-info' %>
+ <%= link_to 'Principal', welcome_index_path, class:'btn btn-md btn-primary' %>
+
+</p>
+</div>
+<div class="col"></div>
+ </div>

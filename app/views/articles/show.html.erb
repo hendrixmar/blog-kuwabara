@@ -1,16 +1,25 @@
+
+<div class="row">
+    <div class="col"> </div>
+<div class="col-md-7">
+
 <p> <strong>Title:</strong>
 <%= @article.title %>
 </p>
-<p> <%= @article.created_at %></p> 
+<p> <%= @article.created_at %></p>
 <p>
     <strong>
         Text:
     </strong>
-    <%=truncate(@article.text, lenght: "75") %>
+    <%=@article.text %>
 
 </p>
 
-<p> <%= link_to 'Back', articles_path %>
-| <%= link_to 'Home', welcome_index_path %>
-| <%= link_to 'edit', edit_article_path %>
+<p> <%= link_to 'Regresar', articles_path, class:'btn btn-md btn-info' %>
+ <%= link_to 'Principal', welcome_index_path, class:'btn btn-md btn-primary' %>
+ <%= link_to 'Editar', edit_article_path, class:'btn btn-md btn-warning'  %>
 </p>
+
+</div>
+<div class="col"></div>
+ </div>
