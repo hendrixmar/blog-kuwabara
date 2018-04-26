@@ -9,18 +9,25 @@
     </tr>
 <% @articles.each do  |article| %>
 <tr>
-    <td>
+    <td> |
         <%= article.title %>
     </td>
-    <td>
+    <td> |
         <%= truncate(article.text, lenght: "75") %>
     </td>
 
-    <td>
-         <%= link_to 'Show', article_path(article) %>
+    <td> |
+         <%= link_to 'Mostrar', article_path(article) %>
     </td>
-    <td>
-        <%= link_to 'edit', edit_article_path(article) %>
+    <td> |
+        <%= link_to 'Editar', edit_article_path(article) %>
+    </td>
+
+    <td> |
+        <%= link_to 'Borrar', article_path(article),
+        method: :Delete,
+        data: {confirm: '¿Estas seguro parce de Borrar este articulo?'}
+        %>
     </td>
 </tr>
 
