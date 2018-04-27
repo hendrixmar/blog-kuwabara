@@ -3,10 +3,15 @@
     <div class="col"> </div>
 <div class="col-md-7">
 
-<p> <strong>Title:</strong>
-<%= @article.title %>
+<p>
+    <strong>Title:</strong>
+    <%= @article.title %>
+<p>
+    <%= @article.created_at %></p>
+<hr><br>
 </p>
-<p> <%= @article.created_at %></p>
+
+<div class="field" style="100%;">
 <p>
     <strong>
         Text:
@@ -15,6 +20,9 @@
 
 </p>
 
+</div>
+<hr>
+<br>
 <p> <%= link_to 'Regresar', articles_path, class:'btn btn-md btn-info' %>
  <%= link_to 'Principal', welcome_index_path, class:'btn btn-md btn-primary' %>
  <%= link_to 'Editar', edit_article_path, class:'btn btn-md btn-warning'  %>

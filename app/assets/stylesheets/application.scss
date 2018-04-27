@@ -14,17 +14,28 @@
  *= require_self
  */
 @import "bootstrap";
-
+@import "welcome";
+@import "navigation";
 .container
-
-{padding-top: 15px;}
+{padding-top: 0px;}
 
 .form-control
 {
+
     background-color: #efeeef;
-    border: 2px solid #7620ad;
+    border: 2px solid #fce93a; // color morado 7620ad
 }
 thead
 {
-    background-color: #dddddd;
+
+    background-color: #fce93a;
+}
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #7620ad;
+  color:#fce93a
+}
+/* Show it is fixed to the top */
+body {
+  min-height: 75rem;
+  padding-top: 4.5rem;
 }
