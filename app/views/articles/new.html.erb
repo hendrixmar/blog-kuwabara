@@ -1,11 +1,11 @@
 <div class="row" style="padding-top:10%;">
     <div class="col"> </div>
-<div class="col-md-7">
+<div class="col-md-8">
 
 
 <h1> Publica un nuevo articulo </h1>
 <%= form_for :article, url: articles_path do |f| %>
-<div class="field" style=="100%;">
+
 <p>
     <%= f.label :'Titulo de la publicacion' %> <br>
     <%= f.text_field :title,class: 'form-control' %>
@@ -17,14 +17,14 @@
 <p>
     <%= f.submit class: 'btn btn-lg btn-success' %>
 </p>
-</div>
+
 <% end %>
 <p>
  <%= link_to 'Regresar', articles_path, class:'btn btn-md btn-info' %>
  <%= link_to 'Principal', welcome_index_path, class:'btn btn-md btn-primary' %>
 
 </p>
-
-<div class="col"></div>
  </div>
+<div class="col"></div>
+
  </div>
