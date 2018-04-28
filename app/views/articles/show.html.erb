@@ -8,14 +8,14 @@
 
 <p>
     <%= @article.created_at.strftime('%a %-b %-d, %Y') %></p>
-<hr><br>
+<hr>
+<center><%= image_tag 'banner.jpg' %></center>
+<hr>
 </p>
 
 <div class="field" style="100%;">
 <p>
-    <strong>
-        Text:
-    </strong>
+
     <%=@article.text %>
 
 </p>
@@ -23,8 +23,12 @@
 </div>
 <hr>
 <br>
+<br>
+<br><br>
+<br>
+<br>
 <p> <%= link_to 'Regresar', articles_path, class:'btn btn-md btn-info' %>
- <%= link_to 'Principal', welcome_index_path, class:'btn btn-md btn-primary' %>
+
  <%= link_to 'Editar', edit_article_path, class:'btn btn-md btn-warning'  %>
 </p>
 

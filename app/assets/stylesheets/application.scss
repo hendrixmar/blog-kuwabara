@@ -16,6 +16,8 @@
 @import "bootstrap";
 @import "welcome";
 @import "navigation";
+@import "footer";
+
 .container
 {padding-top: 0px;}
 
@@ -36,9 +38,10 @@ thead
 }
 /* Show it is fixed to the top */
 body {
-  min-height: 75rem;
+  min-height: 50rem;
   padding-top: 4.5rem;
   background-color: #ffffff;
+     height:100%;
 }
 .jumbotron{
 

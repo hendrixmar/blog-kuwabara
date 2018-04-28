@@ -1,10 +1,14 @@
 .navbar
 {
 
-    background-color: #7620ad !important;
+    background-color: rgba(255, 255, 255, 0.5) !important;
 }
 
+.nav-link{
+    font-weight: bold;
+    color: #7620ad;
 
+}
 .nav-item a
 {
     font-weight: bold;
@@ -13,7 +17,8 @@
 .nav-item a:hover
 {
     font-weight: bold;
-    color: #ffffff;
+    color: #7620ad;
+     text-decoration: underline;
 }
 
 .navbar-toggler
