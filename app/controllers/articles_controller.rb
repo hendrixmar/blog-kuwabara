@@ -1,8 +1,9 @@
 class ArticlesController < ApplicationController
-    
+
 
     def index
         @articles = Article.all
+        @articles = Article.order(params[:sort] )
     end
 
     def new

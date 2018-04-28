@@ -1,4 +1,11 @@
 
+<script>
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
+
+</script>
+
 <div class="row">
     <div class="col"> </div>
 <div class="col-md-10">
@@ -6,15 +13,16 @@
 <h1> Articulos publicados </h1>
 <p>
 <%= link_to 'Nuevo articulo', new_article_path, class:'btn btn-lg btn-info' %></p>
-<table class="table table-hover table-striped table-responsive-xs">
+<table id="example" class="table table-hover table-striped table-responsive-xs">
 <thead>
     <tr>
-        <th>Titulo</th>
-        <th>Texto</th>
-        <th>Fecha de creacíon</th>
-        <th colspan="3">Opciones de edicíon<th>
+        <th><%= link_to "Titulo", :sort => "title" %></th>
+        <th><%= link_to "Texto", :sort => "text" %></th>
+        <th><%= link_to "Fecha de creacíon",  :sort => "created_at"  %></th>
+        <th colspan="5">Opciones de edicíon<th>
     </tr>
 </thead>
+<tbody>
 <% @articles.each do  |article| %>
 <tr>
     <td>
@@ -45,6 +53,7 @@
 </tr>
 
 <% end %>
+</tbody>
 </table>
 
 </div>
